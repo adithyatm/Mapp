@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<title>hi-home</title>
+<head>
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+<script src="static/lightbox/js/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link href="static/lightbox/css/lightbox.css" rel="stylesheet" />
+<script src="static/lightbox/js/lightbox.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+  <div>Hey you!</div>
+  <div>
+    <ul>
+<!--  <li>Go to <a href='/orgtable'> Orgtable</a></li>
+      <li>Test redirect here(Orgtable1 redirects to Org)<a href='/orgtable1'>here</a></li>
+      <li>Want to see your name? Add your /'name' after the domain name </li> </ul>-->
+      <form action="/" method="post" id="form1">
+        Element Name: <input type="number" name="ename"><br>
+        Element Type 
+        <select name="etype">
+          <option value="Text">Text</option>
+          <option value="Link">Link</option>
+          <option value="Check box">Check Box</option>
+          <option value="Button">Button</option>
+        </select>
+      </form>
+      <button type="submit" form="form1" value="Submit">Submit</button>
+  </div>
+
+  <div class='map'>
+    <form action="/map" method="post" id="map_form">
+      Latitude<input type="text" name="lat" placeholder="-25.363882">
+      Longitude<input type="text" name="lng" placeholder="-25.363882">
+    </form>
+  <button type="submit" form='map_form' value='submit'>submit to map</button>
+  </div>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?31m2S9LDTqhwjkno8GEOGCXCr4QzYJ3j";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<img src="static/lightbox/img/loading.gif" data-title="My caption">Sample lightbox</img>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+body {
+background: #666666;
+background-image: url("http://leonardoverse.com/wp-content/uploads/2012/09/website-background-here-is-the-version-of-that-i-built-1532167.jpg");
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+line-height: 17px;
+color: white;
+text-align: center;
+top: 50%;
+left: 50%;
+}
+
+.map {
+    display: block;
+    padding: 10px;
+    margin-top: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+    text-align: justify;
+    text-align: center;
+    font-size: 25;
+}
+
+a {
+text-decoration: none;
+color: #362e19;
+}
+a:hover {
+text-decoration: underline;
+color: #4a3c19;
+}
+
+#wrap {
+margin: 20px auto;
+width: 1000px;
+}
+
+input#gobutton{
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 25px; /*add some padding to the inside of the button*/
+background:#35b128; /*the colour of the button*/
+border:1px solid #33842a; /*required or the default border for the browser will appear*/
+/*give the button curved corners, alter the size as required*/
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 10px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,.75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/
+color:#f3f3f3;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :#399630; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+#header {
+background: #e71111 url(images/header.jpg) no-repeat;
+opacity: 0.4;
+height: 200px;
+}
+#header h1 { 
+font-size: 38px;
+letter-spacing: -1px;
+padding: 70px 0 0 40px;
+color: #fff;
+}
+#header h1 a { 
+color: #fff;
+text-decoration: none;
+font-weight: 100;
+letter-spacing: -2px;
+}
+#header h1 a:hover {
+color: #000;
+}
+#header h2 {
+font-size: 19px;
+color: #EFECE0;
+padding: 20px 0 0 40px;
+letter-spacing: -1px;
+font-weight: 100;
+}
+
+#menu {
+height: 40px;
+line-height: 40px;
+background: #666666 url(http://static1.squarespace.com/static/53e34e53e4b038bdcd5490da/t/5527bb94e4b05cd6d50d8d81/1428667313391/swiss-hutte) no-repeat;
+}
+#menu ul {
+list-style-type: none;
+padding-left: 40px;
+text-align: center;
+}
+#menu ul li {
+display: block;
+float: left;
+}
+#menu ul li a {
+padding: 0 20px 0 0;
+text-decoration: none;
+font-weight: 100;
+font-size: 18px;
+color: #aaa;
+}
+#menu ul li a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+#content {
+background: #666666 url(images/content.jpg) repeat-y;
+padding: 10px;
+}
+
+.left {
+float: left;
+width: 730px;
+text-align: justify;
+padding: 10px;
+font-size: 14px;
+background: #fff;
+border-right: 1px solid #000;
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+
+}
+.left h2 {
+font-size: 20px;
+font-weight: 100;
+padding: 15px 0 7px 0;
+}
+.left h2 a {
+text-decoration: none;
+}
+.left h2 a:hover {
+text-decoration: underline;
+}
+
+.right {
+float: right;
+width: 180px;
+background: #fff;
+padding: 10px;
+border-left: 1px solid #000;
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+}
+.right h2 {
+height: 24px;
+line-height: 24px;
+color: #000;
+font-size: 17px;
+padding-left: 10px;
+
+}
+.right ul {
+padding: 10px 0 15px 30px;
+list-style-type: square;
+}
+.right ul li a {
+font-weight: 100;
+font-size: 12px;
+}
+.right ul li a:hover {
+
+}
+
+#bottom {
+background: #d4ccae url(images/bottom.jpg) no-repeat;
+padding: 10px 0;
+}
+
+#footer {
+text-align: center;
+font-size: 11px;
+}
+
+
+#mother_map {
+width: 3000px;
+height: 3000px;
+top: 50%;
+left: 50%;
+background-color: #CCC;
+margin: -100px 0 0 -200px;
+}
+
+#gmap_canvas{
+width: 1000px;
+height: 1000px;
+top: 15%;
+left: 15%;
+background-color: #CCC;
+}
